@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,3291" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1105,3568" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
       <x:String>System.Activities</x:String>
@@ -69,7 +69,7 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="752,3226" sap2010:WorkflowViewState.IdRef="Sequence_11">
+  <Sequence sap:VirtualizedContainerService.HintSize="752,3503" sap2010:WorkflowViewState.IdRef="Sequence_11">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="excel_table" />
       <Variable x:TypeArguments="x:String" Name="english_tu" />
@@ -86,7 +86,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="710,116" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.spanishdict.com/conjugate/enfrentar">
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="710,116" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.spanishdict.com/translate/plantar">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -112,13 +112,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:BuildDataTable>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[excel_table]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="710,2652" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[excel_table]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="710,2929" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="676,2532" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="676,2809" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="isBrowser" />
               <Variable x:TypeArguments="x:Boolean" Name="isConjugatedElement" />
@@ -160,13 +160,13 @@
                     <av:Size x:Key="ShapeSize">200,51</av:Size>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="https://www.spanishdict.com/conjugate/volar">
+                <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="https://www.spanishdict.com/translate/plantar">
                   <ui:OpenBrowser.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="200,84.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="200,83" sap2010:WorkflowViewState.IdRef="Sequence_1">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -281,6 +281,18 @@
                 </ui:BrowserScope.Body>
               </ui:BrowserScope>
             </Sequence>
+            <If Condition="[category.Length &gt; 40]" sap:VirtualizedContainerService.HintSize="634,237" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[category]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">Null</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </If.Then>
+            </If>
             <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentRow.item(&quot;Spanish&quot;),CurrentRow.item(&quot;English&quot;),category}]" DataTable="[word_data_table]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="634,22" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
             <Assign sap:VirtualizedContainerService.HintSize="634,60" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
@@ -290,7 +302,7 @@
                 <InArgument x:TypeArguments="x:String">Null</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:WriteRange AddHeaders="False" DataTable="[word_data_table]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="634,115" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="output" StartingCell="A1" WorkbookPath="Resource\All Noun.xlsx">
+            <ui:WriteRange AddHeaders="False" DataTable="[word_data_table]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="634,115" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="output" StartingCell="A1141" WorkbookPath="Resource\All Noun.xlsx">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -299,7 +311,7 @@
               </sap:WorkflowViewStateService.ViewState>
             </ui:WriteRange>
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="634,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Progress: &quot;+(excel_table.Rows.IndexOf(CurrentRow)/Table_Size*100).ToString]" />
-            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="634,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="634,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
           </Sequence>
         </ActivityAction>
       </ui:ForEachRow.Body>
